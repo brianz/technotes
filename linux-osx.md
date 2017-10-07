@@ -5,6 +5,17 @@
 	find . -name '*.py' -exec sed -i '' -e  "s/OLD_PATTERN/NEW_PATTERN/g" {} \;
 
 
+## Create a temp file descriptor
+
+This is great for getting data out of some existing system or process and into a command which
+expect to read from a file.  A file is never actually created using this, but the end result is
+what you'd expect.
+
+https://unix.stackexchange.com/questions/63923/pseudo-files-for-temporary-data
+
+    docker run --env-file <(env | grep AWS)
+
+
 ## Read an SSL certificate
 
 	openssl x509 -in public.pem -text -noout
