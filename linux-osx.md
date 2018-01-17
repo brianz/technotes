@@ -3,6 +3,8 @@
 ## In-place replacement
 
     find . -name '*.py' -exec sed -i '' -e  "s/OLD_PATTERN/NEW_PATTERN/g" {} \;
+    
+If there are quotes which are the target replacement, use the following variables: `LC_CTYPE=C LANG=C`. [From this answer](https://stackoverflow.com/questions/19242275/re-error-illegal-byte-sequence-on-mac-os-x)
 
 ## Prepend a line to an existing file
 
