@@ -2,8 +2,13 @@
 
 ## In-place replacement
 
-	find . -name '*.py' -exec sed -i '' -e  "s/OLD_PATTERN/NEW_PATTERN/g" {} \;
+    find . -name '*.py' -exec sed -i '' -e  "s/OLD_PATTERN/NEW_PATTERN/g" {} \;
 
+## Prepend a line to an existing file
+
+    echo 'task goes here' | cat - todo.txt > temp && mv temp todo.txt
+
+[Taken from SO](https://superuser.com/questions/246837/how-do-i-add-text-to-the-beginning-of-a-file-in-bash)
 
 ## Create a temp file descriptor
 
