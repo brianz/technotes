@@ -14,3 +14,13 @@ http://docs.aws.amazon.com/cli/latest/userguide/controlling-output.html
 
     ec2 describe-subnets --filters "Name=vpc-id,Values=vpc-76863d13" \
         --query "Subnets[*].[AvailabilityZone, SubnetId, VpcId]"
+
+## Find your account id from the cli
+
+    aws sts get-caller-identity
+    
+    {
+        "Account": "1234567000", 
+        "UserId": "ABCJOALKJFSDLFSDF", 
+        "Arn": "arn:aws:iam::1234567000:user/brianz"
+    }
