@@ -1,5 +1,15 @@
 # Shell tricks
 
+## Check for env var in Bash
+
+Taken from [this SO question](https://stackoverflow.com/questions/307503/whats-a-concise-way-to-check-that-environment-variables-are-set-in-a-unix-shell)
+
+```bash
+: "${STATE?Need to set STATE}"
+: "${DEST:?Need to set DEST non-empty}"
+```
+The first requires STATE to be set, but STATE="" (an empty string) is OK. The 2nds requires DEST to be set and non-empty.
+
 ## In-place replacement
 
     find . -name '*.py' -exec sed -i '' -e  "s/OLD_PATTERN/NEW_PATTERN/g" {} \;
