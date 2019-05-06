@@ -15,15 +15,15 @@ https://github.com/tpope/vim-surround/blob/master/doc/surround.txt
 
 ## Text object essentials
 
-`cit` - Change inner HTML tag
-`cis` - Change inner sentence
-`cip` - Change inner paragraph
+- `cit` -> Change inner HTML tag
+- `cis` -> Change inner sentence
+- `cip` -> Change inner paragraph
 
-`ci'` - Change inner single quoted content (same applies for any surround-type text like `"` or `(`
-`di"` - Delete inner double quoted content
+- `ci'` -> Change inner single quoted content (same applies for any surround-type text like `"` or `(`
+- `di"` -> Delete inner double quoted content
 
-`dst` - Delete surrounding tag
-`cs'"` - Change surrounding single quote to double quote
+- `dst` -> Delete surrounding tag
+- `cs'"` -> Change surrounding single quote to double quote
 
 
 ## Change tag
