@@ -25,6 +25,11 @@ https://github.com/tpope/vim-surround/blob/master/doc/surround.txt
 - `dst` -> Delete surrounding tag
 - `cs'"` -> Change surrounding single quote to double quote
 
+## Change text with yanked text
+
+Go to the word you want to replace and do `cw`. Do `Ctrl+r` followed by `0` to paste the `0` register.
+
+https://unix.stackexchange.com/questions/88714/vim-how-can-i-do-a-change-word-using-the-current-paste-buffer
 
 ## Change tag
 
