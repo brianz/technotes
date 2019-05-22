@@ -21,6 +21,7 @@ https://github.com/tpope/vim-surround/blob/master/doc/surround.txt
 
 - `ci'` -> Change inner single quoted content (same applies for any surround-type text like `"` or `(`
 - `di"` -> Delete inner double quoted content
+- `dt"` -> Delete from cursor position until next double quote, non-inclusive [(see this answer)](https://askubuntu.com/questions/64833/vi-shortcut-to-delete-until-the-next-x-character)
 
 - `dst` -> Delete surrounding tag
 - `cs'"` -> Change surrounding single quote to double quote
