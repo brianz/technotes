@@ -1,5 +1,11 @@
 # Shell tricks
 
+## Move/rename multiple files
+
+Use `mmv` to move/rename multiple files using patterns, etc. (taken from [this SO answer](https://stackoverflow.com/questions/1086502/rename-multiple-files-based-on-pattern-in-unix/20119482#20119482))
+
+http://manpages.ubuntu.com/manpages/precise/man1/mln.1.html
+
 ## Check for env var in Bash
 
 Taken from [this SO question](https://stackoverflow.com/questions/307503/whats-a-concise-way-to-check-that-environment-variables-are-set-in-a-unix-shell)
@@ -172,16 +178,6 @@ dmesg
 ## strip multiple characters
 
     sed 's/[<>,]//g'
-
-
-## Patching in Git
-
-    git apply --check tests.patch 
-    git apply -v --check tests.patch to see where it's blaring
-
-## Getting LOC changed in a commit range
-
-    git log --author=Brian --since="Feb 15, 2014" --no-merges --numstat --pretty="%H" -- tests | awk 'NF==3 {plus+=$1; minus+=$2} END {printf("+%d, -%d\n", plus, minus)}'
 
 
 ## Uninstall and purge a debian pakages
