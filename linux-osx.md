@@ -6,6 +6,10 @@ Use `mmv` to move/rename multiple files using patterns, etc. (taken from [this S
 
 http://manpages.ubuntu.com/manpages/precise/man1/mln.1.html
 
+## Default variable
+
+`VALUE=${1:-$defvalue}`
+
 ## Check for env var in Bash
 
 Taken from [this SO question](https://stackoverflow.com/questions/307503/whats-a-concise-way-to-check-that-environment-variables-are-set-in-a-unix-shell)
