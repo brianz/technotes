@@ -8,7 +8,7 @@ http://manpages.ubuntu.com/manpages/precise/man1/mln.1.html
 
 ## Default variable
 
-`VALUE=${1:-$defvalue}`
+`VALUE=${1:-defaultvalue}`
 
 ## Check for env var in Bash
 
