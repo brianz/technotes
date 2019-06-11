@@ -1,5 +1,9 @@
 # Shell tricks
 
+## Run http server with Python3
+
+`python3 -m http.server`
+
 ## Move/rename multiple files
 
 Use `mmv` to move/rename multiple files using patterns, etc. (taken from [this SO answer](https://stackoverflow.com/questions/1086502/rename-multiple-files-based-on-pattern-in-unix/20119482#20119482))
