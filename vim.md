@@ -16,6 +16,7 @@ https://github.com/tpope/vim-surround/blob/master/doc/surround.txt
 ## Text object essentials
 
 - `cit` -> Change inner HTML tag
+- `cstt` -> Change the HTML tag itself, [preserving attributes](https://stackoverflow.com/questions/16340037/change-html-tag-in-vim-but-keeping-the-attributes-surround).
 - `cis` -> Change inner sentence
 - `cip` -> Change inner paragraph
 
