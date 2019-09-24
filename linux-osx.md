@@ -1,3 +1,13 @@
+# VS Code
+
+## Repeat button doesn't work on macOS with vim plugin
+
+Run this then restart VSCode
+
+`defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false`
+
+https://stackoverflow.com/questions/39972335/how-do-i-press-and-hold-a-key-and-have-it-repeat-in-vscode/44010683#44010683
+
 # Shell tricks
 
 ## Run http server with Python3
