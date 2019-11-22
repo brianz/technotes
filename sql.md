@@ -62,3 +62,19 @@ ORDER BY last_autovacuum;
 ```sql
 VACUUM (VERBOSE, ANALYZE) table_name;
 ```
+
+
+# MySQL
+
+## See variables/settings
+
+```sql
+show variables like '%_log%';
+```
+
+## Enable/disable full logging
+
+```sql
+SET global general_log = 1;
+SET global general_log = 0;
+```
