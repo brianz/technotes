@@ -1,5 +1,12 @@
 # VS Code
 
+## Reformat SD card to reclaim all space
+
+```
+diskutil list
+sudo diskutil eraseDisk FAT32 WYZE MBRFormat /dev/disk7`
+```
+
 ## Repeat button doesn't work on macOS with vim plugin
 
 Run this then restart VSCode
